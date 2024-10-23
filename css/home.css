@@ -173,6 +173,60 @@
     color: #ff4c4c;
 }
 
+.nav-menu ul li {
+    position: relative;
+}
+
+.sub-menu {
+    background-color: #b1bac7;
+    display: none;
+}
+
+.nav-menu ul li:hover .sub-menu {
+    display: inline-flex;
+    width: 990px;
+    position: absolute;
+    top: 45px;
+    left: -218.5px;
+}
+
+
+.sub-menu1 {
+    background-color: #b1bac7;
+    display: none;
+}
+
+.sub-menu1 ul li {
+    list-style: none;
+}
+
+.nav-menu ul li:hover .sub-menu1 {
+    display: inline-flex;
+    width: 990px;
+    position: absolute;
+    top: 45px;
+    left: -460px
+}
+
+
+.sub-menu2 {
+    background-color: #b1bac7;
+    display: none;
+}
+
+.sub-menu2 ul li {
+    list-style: none;
+}
+
+.nav-menu ul li:hover .sub-menu2 {
+    display: inline-flex;
+    width: 990px;
+    position: absolute;
+    top: 45px;
+    left: -655px
+}
+
+
 .search {
     height: 100%;
 }
@@ -190,19 +244,29 @@
     color: aliceblue;
 }
 
-.title {
+.t1 {
+    position: relative;
     padding: 0px;
     height: 50px;
     border: 1px solid rgba(231, 200, 200, 0.367);
 }
 
+.title{
+    position: absolute;
+    top: -3px;
+    padding: 0px;
+    height: 55px;
+}
+
 .title h2 {
     display: inline-block;
     font-weight: 700;
+    padding: 5px;
     text-transform: uppercase;
     background-color: #ff4c4c;
     color: white;
     height: 100%;
+    box-shadow: 5px 3px 10px 1px rgba(0, 0, 0, 0.5);
 }
 
 .f1 {
@@ -236,14 +300,55 @@
     height: auto;
 }
 
+.card-body h5 {
+    text-transform: uppercase ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
 .card-body span {
     position: absolute;
     bottom: 10px;
+    font-family: monospace;
+    color: #ff4c4c;
 }
 
 .card-body p {
     margin-bottom: 30px;
+    font-family: 'Times New Roman', Times, serif;
 }
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.secondary-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-container:hover .secondary-img {
+    opacity: 1;
+}
+
+.image-container:hover .primary-img {
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
 
 .f3 {
     width: 100%;
