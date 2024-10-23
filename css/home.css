@@ -231,10 +231,19 @@
     color: #e24c11;
 }
 
-.card-body button {
-    margin-top: auto;
+.card-body {
+    position: relative;
+    height: auto;
 }
 
+.card-body span {
+    position: absolute;
+    bottom: 10px;
+}
+
+.card-body p {
+    margin-bottom: 30px;
+}
 
 .f3 {
     width: 100%;
