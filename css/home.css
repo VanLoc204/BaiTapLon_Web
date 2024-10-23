@@ -1,0 +1,243 @@
+.header1 {
+    color: white;
+    line-height: 50px;
+    background: linear-gradient(45deg, #ff4c4c 50%, #33496d 50%);
+}
+
+.container {
+    height: 100%;
+}
+
+.hd1-a {
+    text-align: right !important;
+}
+
+.hd1-a a {
+    text-decoration: none;
+    color: white;
+}
+
+.hd1-a a:hover {
+    color: #ff4c4c;
+}
+
+.header2 {
+    height: 100px;
+}
+
+.logo img{
+    height: 101px;
+}
+
+.content1 {
+    display: flex;
+    height: 100px;
+}
+
+.diachi {
+    padding-top: 5px;
+    display: flex;
+    justify-content: start;
+    height: 100px;
+}
+
+.diachi .icon {
+    color: #e24c11;
+    padding-top: 17px;
+}
+
+.ct-1 {
+    font-size: 14px;
+    padding-top: 20px;
+    text-align: start;
+}
+
+.diachi .t-icon {
+    font-size: 30px;
+}
+
+.ephone {
+    height: 100px;
+    padding-top: 5px;
+}
+
+.email  {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.ephone a{
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.ephone .icon {
+    color: #e24c11;
+    margin-right: 10px;
+}
+
+.em {
+    text-align: start;
+}
+
+.ephone .t-icon {
+    font-size: 25px;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.icon {
+    color: #e24c11;
+    margin-right: 10px;
+}
+
+.pe {
+    text-align: start;
+}
+
+
+.vanchuyen  {
+    height: 100px;
+    display: flex;
+    padding-top: 20px;
+    justify-content: start;
+}
+
+.icon {
+    color: #e24c11;
+    margin-right: 10px;
+}
+
+.vc {
+    text-align: start;
+    font-size: 14px;
+}
+
+.vanchuyen .t-icon {
+    font-size: 25px;
+}
+
+.giohang  {
+    height: 100px;
+    display: flex;
+    padding-top: 20px;
+    justify-content: end;
+}
+
+.giohang .icon {
+    color: #e24c11;
+    margin-right: 10px;
+}
+
+.gh {
+    text-align: start;
+    font-size: 14px;
+}
+
+.giohang .t-icon {
+    font-size: 25px;
+}
+
+.giohang a:hover {
+    color: #ff4c4c;
+}
+
+.menu {
+    border: 1px solid #b1bac7;
+    background-color: #33496d;
+}
+
+.nav-menu {
+    display: inline-block;
+}
+
+.nav-menu ul {
+    justify-content: space-between;
+}
+
+.nav-menu ul li a{
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-menu ul li a:hover {
+    color: #ff4c4c;
+}
+
+.search {
+    height: 100%;
+}
+
+.search input{
+    min-height: 45px;
+}
+
+.search button{
+    min-height: 45px;
+    background-color: #ff4c4c;
+}
+
+.search button i {
+    color: aliceblue;
+}
+
+.title {
+    padding: 0px;
+    height: 50px;
+    border: 1px solid rgba(231, 200, 200, 0.367);
+}
+
+.title h2 {
+    display: inline-block;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #ff4c4c;
+    color: white;
+    height: 100%;
+}
+
+.f1 {
+    width: 100%;
+    height: 50px;
+    background-color: #33496d;
+}
+
+.f2 {
+    background-color: rgba(173, 174, 174, 0.647);
+}
+
+.menu1 p {
+    color: white;
+}
+
+.menu1 ul li{
+    margin-bottom: -10px;
+}
+
+.menu1 ul li{
+    color: white;
+}
+
+.menu1 ul li a:hover {
+    color: #e24c11;
+}
+
+.card-body button {
+    margin-top: auto;
+}
+
+
+.f3 {
+    width: 100%;
+    height: 20px;
+    background-color: #33496d;
+}
