@@ -180,6 +180,7 @@
 .sub-menu {
     background-color: #b1bac7;
     display: none;
+    z-index: 1050;
 }
 
 .nav-menu ul li:hover .sub-menu {
@@ -194,6 +195,7 @@
 .sub-menu1 {
     background-color: #b1bac7;
     display: none;
+    z-index: 1050;
 }
 
 .sub-menu1 ul li {
@@ -212,6 +214,7 @@
 .sub-menu2 {
     background-color: #b1bac7;
     display: none;
+    z-index: 1050;
 }
 
 .sub-menu2 ul li {
@@ -226,6 +229,9 @@
     left: -655px
 }
 
+.carouselXeDien {
+    z-index: 1; /* Đảm bảo carousel có z-index thấp hơn menu con */
+}
 
 .search {
     height: 100%;
@@ -317,6 +323,36 @@
     margin-bottom: 30px;
     font-family: 'Times New Roman', Times, serif;
 }
+
+
+.color-selection button{
+    color: white;
+    width: 100px;
+}
+
+.quantity-selection input {
+    width: 100px;
+}
+
+.themMua {
+    margin-left: 40px;
+}
+
+.themMua button {
+    width: 200px;
+}
+
+.themMua .them {
+    background-color: #33496d;
+}
+
+.themMua .mua {
+    background-color: #ff4c4c;
+}
+
+
+
+
 
 .image-container {
     position: relative;
