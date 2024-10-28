@@ -369,9 +369,11 @@
         function updateCartCount() {
             const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
             const totalItems = cartItems.reduce((sum, item) => sum + item.quantity, 0);
-            document.querySelector('.gh p').textContent = `${totalItems} Sản phẩm`;
+            const cartCountElement = document.querySelector('.gh p');
+            if (cartCountElement) {
+                cartCountElement.textContent = `${totalItems} Sản phẩm`;
+            }
         }
-
         function clearCart() {
             if (confirm('Bạn có chắc muốn xóa tất cả sản phẩm trong giỏ hàng?')) {
                 localStorage.setItem('cartItems', JSON.stringify([]));
