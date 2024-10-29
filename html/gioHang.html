@@ -11,6 +11,7 @@
     <script src="../bootstrap-5.3.3-dist/js/jquery-3.7.1.min.js"></script>
     <script src="../bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../bootstrap-5.3.3-dist/bootstrap-icons/font/bootstrap-icons.min.css">
+    <script src="../js/gioHang.js"></script>
 </head>
 
 <body>
@@ -119,8 +120,8 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="../html/home.html">Thương hiệu</a>
                                 <ul class="sub-menu dropdown">
-                                    <li class="dropdown-item"><a href="#" class="nav-link">DK BIKE</a></li>
-                                    <li class="dropdown-item"><a href="#" class="nav-link">HITASA</a></li>
+                                    <li class="dropdown-item"><a href="../html/DkBike.html" class="nav-link">DK BIKE</a></li>
+                                    <li class="dropdown-item"><a href="../html/HiTaSa.html" class="nav-link">HITASA</a></li>
                                     <li class="dropdown-item"><a href="#" class="nav-link">JVC</a></li>
                                     <li class="dropdown-item"><a href="#" class="nav-link">YADEA</a></li>
                                 </ul>
@@ -130,8 +131,8 @@
                                 <a class="nav-link" href="../html/home.html">Phụ kiện</a>
                                 <ul class="sub-menu1 dropdown">
                                     <li class="dropdown-item"><a href="#" class="nav-link">Nón bảo hiểm</a></li>
-                                    <li class="dropdown-item"><a href="#" class="nav-link">Chân chống</a></li>
-                                    <li class="dropdown-item"><a href="#" class="nav-link">Chắn bùn</a></li>
+                                    <li class="dropdown-item"><a href="#" class="nav-link">Tay ga</a></li>
+                                    <li class="dropdown-item"><a href="#" class="nav-link">Bộ khóa</a></li>
                                 </ul>
                             </li>
 
@@ -299,89 +300,81 @@
             </div>
         </div>
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            displayCartItems();
-            updateCartCount();
-        });
 
-        function displayCartItems() {
-            const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
-            const tableBody = document.getElementById('cart-items');
-            let totalCart = 0;
 
-            tableBody.innerHTML = '';
+    <!-- Modal Body-->
+    <div class="modal fade" id="modalIdThongTin" tabindex="-1" role="dialog" aria-labelledby="modalTitleId"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-white" id="modalTitleId">
+              Thông tin khách hàng
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-4 text-end pt-1">
+                  <label for="#">Họ và tên</label>
+                </div>
+                <div class="col-6 pt-1">
+                  <input type="text" class="form-control" id="txtHoTen" placeholder="Vui lòng nhập họ tên">
+                </div>
+                <div class="col-2">
+                  <span class="errHoTen text-danger">*</span>
+                </div>
+              </div>
 
-            if (cartItems.length === 0) {
-                tableBody.innerHTML = `
-                    <tr>
-                        <td colspan="8" class="text-center">
-                            <p>Giỏ hàng trống</p>
-                            <a href="../html/home.html" class="btn btn-primary">Tiếp tục mua sắm</a>
-                        </td>
-                    </tr>
-                `;
-                document.getElementById('cart-total').textContent = '0 VNĐ';
-                return;
-            }
+              <div class="row mt-3">
+                <div class="col-4 text-end pt-1">
+                  <label for="#">Số điện thoại</label>
+                </div>
+                <div class="col-6 pt-1">
+                  <input type="text" class="form-control" id="txtSDT" placeholder="Nhập số điện thoại">
+                </div>
+                <div class="col-2">
+                  <span class="errSDT text-danger">*</span>
+                </div>
+              </div>
 
-            cartItems.forEach((item, index) => {
-                const row = document.createElement('tr');
-                row.innerHTML = `
-                    <td>${index + 1}</td>
-                    <td>${item.name}</td>
-                    <td>${item.color}</td>
-                    <td>${item.quantity}</td>
-                    <td>${formatPrice(item.price)} VNĐ</td>
-                    <td>${formatPrice(item.total)} VNĐ</td>
-                    <td>
-                        <button class="btn btn-danger btn-sm w-100" onclick="removeItem(${item.id})">
-                            <i class="bi bi-trash"></i>
-                        </button>
-                    </td>
-                    <td>
-                        <button class="btn btn-primary btn-sm w-100" onclick="buyItem(${item.id})">Mua</button>
-                    </td>
-                `;
-                tableBody.appendChild(row);
-                totalCart += item.total;
-            });
+              <div class="row mt-3">
+                <div class="col-4 text-end pt-1">
+                  <label for="#">Email</label>
+                </div>
+                <div class="col-6 pt-1">
+                  <input type="email" class="form-control" id="txtEmail" placeholder="Vui lòng nhập Emai">
+                </div>
+                <div class="col-2">
+                  <span class="errEmail text-danger">*</span>
+                </div>
+              </div>
 
-            document.getElementById('cart-total').textContent = `${formatPrice(totalCart)} VNĐ`;
-        }
+              <div class="row mt-3">
+                <div class="col-4 text-end pt-1">
+                  <label for="#">Địa chỉ</label>
+                </div>
+                <div class="col-6 pt-1">
+                  <input type="text" class="form-control" id="txtDC" placeholder="Vui lòng nhập địa chỉ">
+                </div>
+                <div class="col-2">
+                  <span class="errDC text-danger">*</span>
+                </div>
+              </div>
 
-        function removeItem(itemId) {
-            let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
-            cartItems = cartItems.filter(item => item.id !== itemId);
-            localStorage.setItem('cartItems', JSON.stringify(cartItems));
-            displayCartItems();
-            updateCartCount();
-        }
 
-        function buyItem(itemId) {
-            alert('Chức năng mua hàng đang được phát triển');
-        }
-
-        function formatPrice(price) {
-            return new Intl.NumberFormat('vi-VN').format(price);
-        }
-
-        function updateCartCount() {
-            const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
-            const totalItems = cartItems.reduce((sum, item) => sum + item.quantity, 0);
-            const cartCountElement = document.querySelector('.gh p');
-            if (cartCountElement) {
-                cartCountElement.textContent = `${totalItems} Sản phẩm`;
-            }
-        }
-        function clearCart() {
-            if (confirm('Bạn có chắc muốn xóa tất cả sản phẩm trong giỏ hàng?')) {
-                localStorage.setItem('cartItems', JSON.stringify([]));
-                displayCartItems();
-                updateCartCount();
-            }
-        }
-    </script>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Thoát
+            </button>
+            <button type="button" class="btn btn-primary">Xác nhận</button>
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
 
 </html>
