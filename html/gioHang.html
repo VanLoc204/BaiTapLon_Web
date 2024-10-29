@@ -120,10 +120,12 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="../html/home.html">Thương hiệu</a>
                                 <ul class="sub-menu dropdown">
-                                    <li class="dropdown-item"><a href="../html/DkBike.html" class="nav-link">DK BIKE</a></li>
-                                    <li class="dropdown-item"><a href="../html/HiTaSa.html" class="nav-link">HITASA</a></li>
-                                    <li class="dropdown-item"><a href="#" class="nav-link">JVC</a></li>
-                                    <li class="dropdown-item"><a href="#" class="nav-link">YADEA</a></li>
+                                    <li class="dropdown-item"><a href="../html/DkBike.html" class="nav-link">DK BIKE</a>
+                                    </li>
+                                    <li class="dropdown-item"><a href="../html/HiTaSa.html" class="nav-link">HITASA</a>
+                                    </li>
+                                    <li class="dropdown-item"><a href="../html/JVC.html" class="nav-link">JVC</a></li>
+                                    <li class="dropdown-item"><a href="../html/YADEA.html" class="nav-link">YADEA</a></li>
                                 </ul>
                             </li>
 
@@ -304,76 +306,77 @@
 
     <!-- Modal Body-->
     <div class="modal fade" id="modalIdThongTin" tabindex="-1" role="dialog" aria-labelledby="modalTitleId"
-      aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title text-white" id="modalTitleId">
-              Thông tin khách hàng
-            </h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-4 text-end pt-1">
-                  <label for="#">Họ và tên</label>
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-white" id="modalTitleId">
+                        Thông tin khách hàng
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="col-6 pt-1">
-                  <input type="text" class="form-control" id="txtHoTen" placeholder="Vui lòng nhập họ tên">
-                </div>
-                <div class="col-2">
-                  <span class="errHoTen text-danger">*</span>
-                </div>
-              </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-4 text-end pt-1">
+                                <label for="#">Họ và tên</label>
+                            </div>
+                            <div class="col-6 pt-1">
+                                <input type="text" class="form-control" id="txtHoTen"
+                                    placeholder="Vui lòng nhập họ tên">
+                            </div>
+                            <div class="col-2">
+                                <span class="errHoTen text-danger">*</span>
+                            </div>
+                        </div>
 
-              <div class="row mt-3">
-                <div class="col-4 text-end pt-1">
-                  <label for="#">Số điện thoại</label>
-                </div>
-                <div class="col-6 pt-1">
-                  <input type="text" class="form-control" id="txtSDT" placeholder="Nhập số điện thoại">
-                </div>
-                <div class="col-2">
-                  <span class="errSDT text-danger">*</span>
-                </div>
-              </div>
+                        <div class="row mt-3">
+                            <div class="col-4 text-end pt-1">
+                                <label for="#">Số điện thoại</label>
+                            </div>
+                            <div class="col-6 pt-1">
+                                <input type="text" class="form-control" id="txtSDT" placeholder="Nhập số điện thoại">
+                            </div>
+                            <div class="col-2">
+                                <span class="errSDT text-danger">*</span>
+                            </div>
+                        </div>
 
-              <div class="row mt-3">
-                <div class="col-4 text-end pt-1">
-                  <label for="#">Email</label>
-                </div>
-                <div class="col-6 pt-1">
-                  <input type="email" class="form-control" id="txtEmail" placeholder="Vui lòng nhập Emai">
-                </div>
-                <div class="col-2">
-                  <span class="errEmail text-danger">*</span>
-                </div>
-              </div>
+                        <div class="row mt-3">
+                            <div class="col-4 text-end pt-1">
+                                <label for="#">Email</label>
+                            </div>
+                            <div class="col-6 pt-1">
+                                <input type="email" class="form-control" id="txtEmail" placeholder="Vui lòng nhập Emai">
+                            </div>
+                            <div class="col-2">
+                                <span class="errEmail text-danger">*</span>
+                            </div>
+                        </div>
 
-              <div class="row mt-3">
-                <div class="col-4 text-end pt-1">
-                  <label for="#">Địa chỉ</label>
-                </div>
-                <div class="col-6 pt-1">
-                  <input type="text" class="form-control" id="txtDC" placeholder="Vui lòng nhập địa chỉ">
-                </div>
-                <div class="col-2">
-                  <span class="errDC text-danger">*</span>
-                </div>
-              </div>
+                        <div class="row mt-3">
+                            <div class="col-4 text-end pt-1">
+                                <label for="#">Địa chỉ</label>
+                            </div>
+                            <div class="col-6 pt-1">
+                                <input type="text" class="form-control" id="txtDC" placeholder="Vui lòng nhập địa chỉ">
+                            </div>
+                            <div class="col-2">
+                                <span class="errDC text-danger">*</span>
+                            </div>
+                        </div>
 
 
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Thoát
+                    </button>
+                    <button type="button" class="btn btn-primary">Xác nhận</button>
+                </div>
             </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-              Thoát
-            </button>
-            <button type="button" class="btn btn-primary">Xác nhận</button>
-          </div>
         </div>
-      </div>
     </div>
 </body>
 
