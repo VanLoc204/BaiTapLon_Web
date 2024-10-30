@@ -162,7 +162,7 @@ $(document).ready(function () {
         var chuoi = $("#txtDC").val().trim();
 
         if (chuoi === "") {
-            $(".errDC").html("Địa chỉ không được để trống");
+            $(".errDC").html("ĐC trống");
             return false;
         } else {
             $(".errDC").html("*");

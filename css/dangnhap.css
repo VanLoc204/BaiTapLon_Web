@@ -1,0 +1,34 @@
+.dangky {
+    margin-left: 260px;
+}
+
+.section {
+    padding: 50px;
+    background: linear-gradient(45deg, #ff4c4c, #33496d);
+}
+
+.section .container .card {
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.1); /* Màu trắng với độ trong suốt */
+}
+
+.card .btn-primary{
+    border: 1px solid rgb(114, 113, 113);
+    background-color: #ff4c4c;
+}
+
+.card a {
+    color: white;
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: blue;
+}
+
+
+.footer {
+    margin-top: 0px;
+}

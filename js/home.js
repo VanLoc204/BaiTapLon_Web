@@ -191,7 +191,7 @@ $(document).ready(function () {
     var chuoi = $("#txtDC").val().trim();
 
     if (chuoi === "") {
-      $(".errDC").html("Địa chỉ không được để trống");
+      $(".errDC").html("ĐC trống");
       return false;
     } else {
       $(".errDC").html("*");
@@ -279,22 +279,12 @@ $(document).ready(function () {
       }
     } else {
       console.error("Không tìm thấy thông tin modal sản phẩm!");
-      alert("Có lỗi xảy ra, vui lòng thử lại!");
     }
   });
 
-  // Hàm test để kiểm tra
-  function testModalFlow() {
-    $('.modal .mua').click(function () {
-      var modalId = $(this).closest('.modal').attr('id');
-      console.log("Test - Nút Mua được nhấn trong modal: " + modalId);
-      console.log("Test - selectedProductModalId: " + selectedProductModalId);
-    });
-  }
 
-  $(document).ready(function () {
-    testModalFlow();
-  });
+
+
 
   // Thêm sự kiện click cho các nút màu sắc
   $(".color-btn").click(function () {
@@ -303,4 +293,32 @@ $(document).ready(function () {
   });
 });
 
+
+$(document).ready(function () {
+  // Kiểm tra xem có người dùng đã đăng nhập chưa
+  var loggedInUser = localStorage.getItem('loggedInUser');
+  if (loggedInUser) {
+    // Nếu đã đăng nhập, thay đổi nội dung của thẻ a
+    $('.hd1-a a').text(loggedInUser).removeAttr('href');
+
+    // Thêm menu dropdown cho tài khoản người dùng
+    $('.hd1-a a').click(function (e) {
+      e.preventDefault();
+      // Tạo và hiển thị menu dropdown ở đây
+      if ($('.user-dropdown').length === 0) {
+        var dropdown = $('<div class="user-dropdown"><a href="#" id="logout">Đăng xuất</a></div>');
+        $('.hd1-a').append(dropdown);
+      } else {
+        $('.user-dropdown').toggle();
+      }
+    });
+
+    // Xử lý đăng xuất
+    $(document).on('click', '#logout', function (e) {
+      e.preventDefault();
+      localStorage.removeItem('loggedInUser');
+      location.reload(); // Tải lại trang
+    });
+  }
+});
 
