@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    
+
     // Hiển thị đơn hàng từ localStorage
     function displayOrders() {
         var orders = JSON.parse(localStorage.getItem('orders')) || [];
@@ -48,3 +48,8 @@ $(document).ready(function () {
     // Hiển thị đơn hàng khi trang được tải
     displayOrders();
 });
+
+
+
+
+

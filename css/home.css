@@ -188,7 +188,7 @@
     width: 990px;
     position: absolute;
     top: 45px;
-    left: -218.5px;
+    left: -175px;
 }
 
 
@@ -207,7 +207,7 @@
     width: 990px;
     position: absolute;
     top: 45px;
-    left: -460px
+    left: -372.5px;
 }
 
 
@@ -226,7 +226,7 @@
     width: 990px;
     position: absolute;
     top: 45px;
-    left: -655px
+    left: -524.5px;
 }
 
 .carouselXeDien {
@@ -387,4 +387,65 @@
     width: 100%;
     height: 20px;
     background-color: #33496d;
+}
+
+
+.muaHang:hover {
+    color: #ff4c4c;
+}
+
+
+
+
+
+
+
+
+
+.dangky {
+    margin-left: 260px;
+}
+
+.section1 {
+    padding: 50px;
+    background: linear-gradient(45deg, #ff4c4c, #33496d);
+}
+
+.section1 .container .card {
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.1); /* Màu trắng với độ trong suốt */
+}
+
+.card .btn-primary{
+    border: 1px solid rgb(114, 113, 113);
+    background-color: #ff4c4c;
+}
+
+.card a {
+    color: white;
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: blue;
+}
+
+
+.footer1 {
+    margin-top: 0px;
+}
+
+
+.GioiThieu h1 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #b91409;
+    margin: 5px 0 15px 0;
+}
+.GioiThieu {
+    background-color: rgb(217, 217, 217);
+    padding-top: 20px;
+    padding-bottom: 30px;
 }

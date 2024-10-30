@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XeDapTrieuDo-DkBike</title>
+    <title>TheGioiXeDien-YADEA</title>
     <link rel="stylesheet" href="../css/home.css" />
     <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css" />
     <script src="../bootstrap-5.3.3-dist/js/jquery-3.7.1.min.js"></script>
@@ -146,7 +146,11 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="../html/home.html">Liên hệ</a>
+                                <a class="nav-link" href="../html/GioiThieu.html">SITEMAP</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/GioiThieu.html">Giới thiệu</a>
                             </li>
                         </ul>
                     </div>
@@ -217,12 +221,13 @@
                     </div>
                 </div>
 
-                <div class="row row-cols-4 g-3 mt-3 pb-3 p-1 ps-3 rounded" style="background-color: rgb(245, 245, 245);">
+                <div class="row row-cols-4 g-3 mt-3 pb-3 p-1 ps-3 rounded"
+                    style="background-color: rgb(245, 245, 245);">
                     <div class="col">
                         <div class="card h-100 image-container border">
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#modalId8"><img
+                            <a href="chiTietSanPham.html?id=8"><img
                                     src="../img/xedapdien17.jpg" class="card-img primary-img" alt="..." /></a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#modalId8"><img
+                            <a href="chiTietSanPham.html?id=8"><img
                                     src="../img/xedapdien18.jpg" class="card-img secondary-img" alt="..." /></a>
                             <div class="card-body border-top">
                                 <h5 class="card-title">E-Scooter YADEA X-Bull</h5>
@@ -234,9 +239,9 @@
 
                     <div class="col">
                         <div class="card h-100 image-container border">
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#modalId8"><img
+                            <a href="chiTietSanPham.html?id=8"><img
                                     src="../img/xedapdien19.jpg" class="card-img primary-img" alt="..." /></a>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#modalId8"><img
+                            <a href="chiTietSanPham.html?id=8"><img
                                     src="../img/xedapdien20.jpg" class="card-img secondary-img" alt="..." /></a>
                             <div class="card-body border-top">
                                 <h5 class="card-title">E-Scooter YADEA X-Bull</h5>
@@ -247,12 +252,6 @@
                             </div>
                         </div>
                     </div>
-
-
-
-
-
-
                 </div>
             </div>
         </div>
@@ -271,7 +270,15 @@
                                             <a class="nav-link" href="../html/home.html">Trang chủ</a>
                                         </li>
                                         <li class="nav-item"><a class="nav-link" href="#">Sản phẩm</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="../html/GioiThieu.html">Giới thiệu</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="../html/GioiThieu.html">Tin tức</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="../html/GioiThieu.html">SiteMap</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -479,81 +486,6 @@
         </div>
     </div>
 
-
-    <!-- Modal Body-->
-    <div class="modal fade" id="modalIdThongTin" tabindex="-1" role="dialog" aria-labelledby="modalTitleId"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-white" id="modalTitleId">
-                        Thông tin khách hàng
-                    </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-4 text-end pt-1">
-                                <label for="#">Họ và tên</label>
-                            </div>
-                            <div class="col-6 pt-1">
-                                <input type="text" class="form-control" id="txtHoTen"
-                                    placeholder="Vui lòng nhập họ tên">
-                            </div>
-                            <div class="col-2">
-                                <span class="errHoTen text-danger">*</span>
-                            </div>
-                        </div>
-
-                        <div class="row mt-3">
-                            <div class="col-4 text-end pt-1">
-                                <label for="#">Số điện thoại</label>
-                            </div>
-                            <div class="col-6 pt-1">
-                                <input type="text" class="form-control" id="txtSDT" placeholder="Nhập số điện thoại">
-                            </div>
-                            <div class="col-2">
-                                <span class="errSDT text-danger">*</span>
-                            </div>
-                        </div>
-
-                        <div class="row mt-3">
-                            <div class="col-4 text-end pt-1">
-                                <label for="#">Email</label>
-                            </div>
-                            <div class="col-6 pt-1">
-                                <input type="email" class="form-control" id="txtEmail" placeholder="Vui lòng nhập Emai">
-                            </div>
-                            <div class="col-2">
-                                <span class="errEmail text-danger">*</span>
-                            </div>
-                        </div>
-
-                        <div class="row mt-3">
-                            <div class="col-4 text-end pt-1">
-                                <label for="#">Địa chỉ</label>
-                            </div>
-                            <div class="col-6 pt-1">
-                                <input type="text" class="form-control" id="txtDC" placeholder="Vui lòng nhập địa chỉ">
-                            </div>
-                            <div class="col-2">
-                                <span class="errDC text-danger">*</span>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                        Thoát
-                    </button>
-                    <button type="button" class="btn btn-primary">Xác nhận</button>
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
 
 </html>
