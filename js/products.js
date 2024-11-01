@@ -288,8 +288,340 @@ const products = [
         ],
         description: "Xe Máy Điện E-Scooter JVC Xmen Neo New"
     },
+    {
+        id: 19,
+        name: "E-SCOOTER JVC G5",
+        brand: "JVC Eco",
+        origin: "Việt Nam",
+        power: "800W",
+        maxDistance: "96km/lần sạc",
+        price: 13390000,
+        colors: ["Đỏ", "Xám"],
+        images: [
+            "../img/JVC5.jpg",
+            "../img/JVC6.jpg",
+        ],
+        description: "Xe Máy Điện E-SCOOTER JVC G5"
+    },
+    {
+        id: 20,
+        name: "Xmen JVC F1",
+        brand: "JVC Eco",
+        origin: "Việt Nam",
+        power: "800W",
+        maxDistance: "80-100km/lần sạc",
+        price: 14900000,
+        colors: ["Đỏ", "Xám"],
+        images: [
+            "../img/JVC7.webp",
+            "../img/JVC8.webp",
+        ],
+        description: "Xe máy điện Xmen JVC F1"
+    },
+    {
+        id: 21,
+        name: "E-Scooter YADEA Xmen Sport",
+        brand: "YADEA",
+        origin: "Việt Nam, Trung Quốc",
+        power: "1000W",
+        maxDistance: "70km/lần sạc",
+        price: 17900000,
+        colors: ["Đỏ", "Đen"],
+        images: [
+            "../img/YADEA1.jpg",
+            "../img/YADEA2.jpg",
+        ],
+        description: "Xe Máy Điện E-Scooter YADEA Xmen Sport"
+    },
+    {
+        id: 22,
+        name: "E-Bike YADEA IGO",
+        brand: "YADEA",
+        origin: "Việt Nam, Trung Quốc",
+        power: "210W",
+        maxDistance: "50km/lần sạc",
+        price: 12690000,
+        colors: ["Đỏ", "Đen"],
+        images: [
+            "../img/YADEA3.jpg",
+            "../img/YADEA4.jpg",
+        ],
+        description: "Xe Đạp Điện E-Bike YADEA IGO"
+    },
+    {
+        id: 23,
+        name: "Yadea Xmen Neo",
+        brand: "YADEA",
+        origin: "Việt Nam, Trung Quốc",
+        power: "1000W",
+        maxDistance: "80km/lần sạc",
+        price: 17500000,
+        colors: ["Xanh", "Đen"],
+        images: [
+            "../img/YADEA5.webp",
+            "../img/YADEA6.webp",
+        ],
+        description: "Xe máy điện Yadea Xmen Neo"
+    },
+    {
+        id: 24,
+        name: "Yadea I6",
+        brand: "YADEA",
+        origin: "Việt Nam, Trung Quốc",
+        power: "1000W",
+        maxDistance: "80km/lần sạc",
+        price: 11790000,
+        colors: ["Xanh", "Đen"],
+        images: [
+            "../img/YADEA7.webp",
+            "../img/YADEA8.webp",
+        ],
+        description: "Xe đạp điện Yadea I6"
+    },
+    {
+        id: 25,
+        name: "Yadea I8",
+        brand: "YADEA",
+        origin: "Việt Nam, Trung Quốc",
+        power: "1000W",
+        maxDistance: "80km/lần sạc",
+        price: 13990000,
+        colors: ["Xanh", "Be"],
+        images: [
+            "../img/YADEA9.webp",
+            "../img/YADEA10.webp",
+        ],
+        description: "Xe đạp điện Yadea I8"
+    },
+    {
+        id: 26,
+        name: "Yadea I5",
+        brand: "YADEA",
+        origin: "Việt Nam, Trung Quốc",
+        power: "1000W",
+        maxDistance: "80km/lần sạc",
+        price: 11500000,
+        colors: ["Xanh", "Đỏ"],
+        images: [
+            "../img/YADEA11.webp",
+            "../img/YADEA12.webp",
+        ],
+        description: "Xe đạp điện Yadea I5"
+    },
+    {
+        id: 27,
+        name: "TAY GA XE NIJIA",
+        brand: "NIJIA",
+        origin: "Việt Nam",
+        power: "Không có",
+        maxDistance: "Không có",
+        price: 350000,
+        colors: ["Đen"],
+        images: [
+            "../img/phukien3.jpg",
+            "../img/phukien3.jpg",
+        ],
+        description: "Tay ga xe Nijia sử dụng cho xe đạp điện Nijia hàng chính hãng."
+    },
+    {
+        id: 28,
+        name: "Bộ khóa xe Yadea Xbull",
+        brand: "Yadea",
+        origin: "Việt Nam",
+        power: "Không có",
+        maxDistance: "Không có",
+        price: 150000,
+        colors: ["Đen"],
+        images: [
+            "../img/phukien6.jpg",
+            "../img/phukien6.jpg",
+        ],
+        description: "Bộ khoá nguồn xe điện chỉ dành cho dòng xe điện Yadea Xbull"
+    },
+    {
+        id: 29,
+        name: "Bộ khoá xe điện Dk Bike Spatar",
+        brand: "DK BIKE",
+        origin: "Việt Nam",
+        power: "Không có",
+        maxDistance: "Không có",
+        price: 350000,
+        colors: ["Đen"],
+        images: [
+            "../img/phukien7.jpg",
+            "../img/phukien7.jpg",
+        ],
+        description: "Bộ khoá nguồn xe điện chỉ dành cho dòng xe điện Dk Bike Spatar"
+    },
+    {
+        id: 30,
+        name: "Khoá xe đạp điện Dkbike Samurai",
+        brand: "DK BIKE",
+        origin: "Việt Nam",
+        power: "Không có",
+        maxDistance: "Không có",
+        price: 490000,
+        colors: ["Đen"],
+        images: [
+            "../img/phukien8.jpg",
+            "../img/phukien8.jpg",
+        ],
+        description: "Bộ khoá nguồn xe điện chỉ dành cho dòng xe điện Dkbike Samurai"
+    },
+    {
+        id: 31,
+        name: "Pin xe điện Yadea Igo 48v-12a",
+        brand: "Yadea",
+        origin: "Việt Nam",
+        power: "Không có",
+        maxDistance: "Không có",
+        price: 4800000,
+        colors: ["Đen"],
+        images: [
+            "../img/phukien9.jpg",
+            "../img/phukien9.jpg",
+        ],
+        description: "Pin xe điện Yadea Igo 48v-12a nhanh chóng tiện lợi"
+    },
+    {
+        id: 32,
+        name: "SẠC XE XMEN YADEA",
+        brand: "YADEA",
+        origin: "Việt Nam",
+        power: "Không có",
+        maxDistance: "Không có",
+        price: 500000,
+        colors: ["Đen"],
+        images: [
+            "../img/phukien10.png",
+            "../img/phukien10.png",
+        ],
+        description: "Sạc xe Xmen Yadea chuyên dùng cho xe máy điện Xmen chính hãng."
+    },
+    {
+        id: 33,
+        name: "SẠC PIN 36V",
+        brand: "Không có",
+        origin: "Việt Nam",
+        power: "Không có",
+        maxDistance: "Không có",
+        price: 400000,
+        colors: ["Đen"],
+        images: [
+            "../img/phukien11.png",
+            "../img/phukien11.png",
+        ],
+        description: "Sạc pin 36v sử dụng cho các loại xe đạp điện chạy pin lithium có pin 36v."
+    },
+    {
+        id: 34,
+        name: "SẠC XE ĐIỆN 48V – 12AH",
+        brand: "Không có",
+        origin: "Việt Nam",
+        power: "Không có",
+        maxDistance: "Không có",
+        price: 400000,
+        colors: ["Đen"],
+        images: [
+            "../img/phukien12.png",
+            "../img/phukien12.png",
+        ],
+        description: "Sạc xe điện 48V – 12Ah chuyên dùng cho xe đạp điện chạy 4 bình bé từ 12Ah như Giant, NIJIA, các xe bò điên"
+    },
 
+    {
+        id: 35,
+        name: "ĐIỀU TỐC XE XMEN GT",
+        brand: "XMEN",
+        origin: "Việt Nam",
+        power: "Không có",
+        maxDistance: "Không có",
+        price: 1200000,
+        colors: ["Trắng"],
+        images: [
+            "../img/phukien5.jpg",
+            "../img/phukien5.jpg",
+        ],
+        description: "Điều tốc xe Xmen GT là bộ phận quan trọng của xe. Đây là một bộ phận có vai trò quan trọng điều khiển và kiểm soát tất cả các thiết bị điện của xe"
+    },
 
+    {
+        id: 36,
+        name: "Royal M379",
+        brand: "Royal",
+        origin: "Việt Nam",
+        power: "Không có",
+        maxDistance: "Không có",
+        price: 250000,
+        colors: ["Trắng", "Đen"],
+        images: ["../img/nbh1.jpg", "../img/nbh2.jpg"],
+        description: "Mũ bảo hiểm 1/2, Royal M379",
+    },
+
+    {
+        id: 37,
+        name: "Royal M103",
+        brand: "Royal",
+        origin: "Việt Nam",
+        power: "Không có",
+        maxDistance: "Không có",
+        price: 300000,
+        colors: ["Trắng", "Đen"],
+        images: ["../img/nbh3.jpg", "../img/nbh4.jpg"],
+        description: "Mũ bảo hiểm 1/2, Royal M103",
+    },
+
+    {
+        id: 38,
+        name: "Royal M134C",
+        brand: "Royal",
+        origin: "Việt Nam",
+        power: "Không có",
+        maxDistance: "Không có",
+        price: 590000,
+        colors: ["Trắng", "Đen"],
+        images: ["../img/nbh5.jpg", "../img/nbh6.jpg"],
+        description: "Mũ bảo hiểm 3/4, Royal M134C",
+    },
+
+    {
+        id: 39,
+        name: "Nón Sơn",
+        brand: "Nón Sơn",
+        origin: "Việt Nam",
+        power: "Không có",
+        maxDistance: "Không có",
+        price: 290000,
+        colors: ["Trắng", "Đen"],
+        images: ["../img/nbh8.jpg", "../img/nbh7.jpg"],
+        description: "Mũ bảo hiểm 1/2, Nón Sơn",
+    },
+
+    {
+        id: 40,
+        name: "NAPOLI BOSOZOKU JAPA",
+        brand: "NAPOLI",
+        origin: "Việt Nam",
+        power: "Không có",
+        maxDistance: "Không có",
+        price: 230000,
+        colors: ["Vàng", "Đen"],
+        images: ["../img/nbh9.jpg", "../img/nbh10.jpg"],
+        description: "Mũ bảo hiểm 1/2, NAPOLI BOSOZOKU JAPA",
+    },
+
+    {
+        id: 41,
+        name: "ASIA MT-139",
+        brand: "ASIA",
+        origin: "Việt Nam",
+        power: "Không có",
+        maxDistance: "Không có",
+        price: 380000,
+        colors: ["Đỏ", "Đen"],
+        images: ["../img/nbh11.jpg", "../img/nbh12.jpg"],
+        description: "Mũ bảo hiểm 1/2, ASIA MT-139",
+    },
 
     // Thêm các sản phẩm khác vào đây
 ];
