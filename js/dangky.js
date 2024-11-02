@@ -149,7 +149,7 @@ $(document).ready(function () {
             alert("Đăng ký thành công!");
 
             // Chuyển hướng đến trang đăng nhập
-            window.location.href = 'DangNhap.html'; // Thay đổi 'dangnhap.html' thành đường dẫn thực tế của trang đăng nhập của bạn
+            window.location.href = 'DangNhap.html';
         } else {
             alert("Vui lòng kiểm tra lại thông tin đăng ký");
         }
